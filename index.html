@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./estilos.css">
+        <script src="./scripts.js" defer></script>
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Gloria+Hallelujah&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+        <!--FONT AWESOME-->
+        <script src="https://kit.fontawesome.com/3b60c42785.js" crossorigin="anonymous"></script>
+        <title>Animals Memo-Test</title>
+    </head>
+    <body>
+
+        <!--**************** CARTEL RESULTADO ******************-->
+        <div class="contenedor__cartel-resultado oculto" id="contenedor__cartel-resultado">
+            <div class="cartel-resultado">
+                <h3 class="texto-ganador">WINNER:</h3>
+                <span class="ganador" id="ganador"></span>
+            </div>
+            <div class="contenedor__botones-resultado">
+                <button type="button" class="botones-resultado" onclick="location.reload()">
+                    Play again</button>
+            </div>
+        </div>
+        <!--**************** HEADER ********************-->
+        <header class="header header-memo-test-animales">
+            <h1 class="header__titulo">Animals Memo-Test</h1>
+        </header>
+
+        <!--******************* CONTENEDOR PRINCIPAL *****************-->
+        <div class="contenedor-principal">
+            <div class="contenedor-superior">
+                <h3 class="texto__turno-de" id="texto__turno-de">Turn: Player 1</h3>
+            </div>
+
+            <div id="contenedor-fichas" class="contenedor-fichas"></div>
+
+            
+            
+            <div class="contenedor-inferior">
+                <div class="grupo__puntaje">
+                    <h4 class="texto__puntaje-jugador">Player 1 Score: </h4>
+                    <span class="texto__puntaje-jugador" id="puntaje-jugador1">00</span>
+                </div>
+
+                <div class="grupo__puntaje">
+                    <h4 class="texto__puntaje-jugador">Player 2 Score: </h4>
+                    <span class="texto__puntaje-jugador" id="puntaje-jugador2">00</span>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
